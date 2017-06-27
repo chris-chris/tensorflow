@@ -179,7 +179,7 @@ int64 ExecStep::accelerator_exec_micros() const {
 
 int64 ExecStep::cpu_exec_micros() const {
   int64 total = 0;
-  // Here we use for loop just for consistent appearence with
+  // Here we use for loop just for consistent appearance with
   // accelerator_execs.
   // We only expect cpu_execs_ to have 1 element because an
   // op can only be scheduled on 1 device.

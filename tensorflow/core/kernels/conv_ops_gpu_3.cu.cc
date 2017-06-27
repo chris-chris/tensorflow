@@ -313,7 +313,7 @@ __global__ void SwapDimension1And2InTensor3SmallDim(const T* input,
     tile_height = large_dim - block_offset;
   }
 
-  // Load a continous memory region to shared memory tile.
+  // Load a continuous memory region to shared memory tile.
   if (x < tile_height) {
     for (int y = 0; y < small_dim; y++) {
       int shmem_index = SmallDim2 ? (x + y * tile_height) : (x * small_dim + y);
