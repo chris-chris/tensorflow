@@ -142,7 +142,7 @@ def flatten(nest):
   used instead. The same convention is followed in `pack_sequence_as`. This
   correctly repacks dicts and `OrderedDict`s after they have been flattened,
   and also allows flattening an `OrderedDict` and then repacking it back using
-  a correponding plain dict, or vice-versa.
+  a corresponding plain dict, or vice-versa.
   Dictionaries with non-sortable keys cannot be flattened.
 
   Args:
@@ -322,7 +322,7 @@ def pack_sequence_as(structure, flat_sequence):
   keys is used instead. The same convention is followed in `pack_sequence_as`.
   This correctly repacks dicts and `OrderedDict`s after they have been
   flattened, and also allows flattening an `OrderedDict` and then repacking it
-  back using a correponding plain dict, or vice-versa.
+  back using a corresponding plain dict, or vice-versa.
   Dictionaries with non-sortable keys cannot be flattened.
 
   Args:
